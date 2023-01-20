@@ -1,0 +1,182 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+/* For removing arrows in number input */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: olive;
+}
+
+::selection {
+  color: white;
+  background-color: black;
+}
+
+section {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.first-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 4rem;
+}
+
+.value-one-text,
+.value-two-text {
+  font-size: 2.4rem;
+  font-weight: bold;
+}
+
+.first-part,
+.second-part {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  position: relative;
+}
+
+input[type="number"] {
+  height: 3rem;
+  font-size: 2rem;
+  width: 17rem;
+  outline: none;
+  background-color: olive;
+  color: white;
+  font-weight: 700;
+  border: none;
+  border-radius: 0.4rem;
+  transition: all 0.1s ease;
+}
+
+input[type="number"]:focus {
+  outline: 0.4rem solid purple;
+}
+
+.second-section {
+  display: flex;
+  gap: 3rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  padding: 0.8rem 1.6rem;
+  font-size: 2.2rem;
+  cursor: pointer;
+  background-color: olive;
+  color: white;
+  border: none;
+  border-radius: 0.4rem;
+  font-weight: 700;
+  border: 0.3rem solid olive;
+  transition: all 0.2s ease;
+}
+
+.btn:hover,
+.btn:active {
+  background-color: transparent;
+  color: black;
+}
+
+.container {
+  padding-top: 8rem;
+  width: 92rem;
+  height: 56rem;
+  border: 1rem solid purple;
+  background-color: whitesmoke;
+  border-radius: 1rem;
+}
+.primary-header {
+  text-align: center;
+  margin-bottom: 6rem;
+  font-size: 3.4rem;
+  text-transform: capitalize;
+  color: purple;
+  font-weight: 900;
+  letter-spacing: 0.1rem;
+}
+
+/*  */
+
+.answer-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 6rem;
+  flex-direction: row-reverse;
+  margin-left: 8rem;
+  gap: 2rem;
+}
+
+.answer {
+  text-align: center;
+  font-size: 3.2rem;
+  border: 0.6rem solid olive;
+  display: inline-block;
+  padding: 1rem 8rem;
+}
+
+.close-icon {
+  cursor: pointer;
+  font-size: 4rem;
+}
+
+.close-icon:hover {
+  color: #999999;
+}
+
+.hide {
+  display: none;
+}
+
+.first-backspace,
+.second-backspace {
+  position: absolute;
+  height: 2.2rem;
+  cursor: pointer;
+  right: 32rem;
+}
+
+.first-backspace:active,
+.second-backspace:active {
+  transform: scale(1.1);
+}
+/*  */
+
+.close-icon,
+.answer {
+  animation: odgovorDolazi 0.5s;
+}
+
+@keyframes odgovorDolazi {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

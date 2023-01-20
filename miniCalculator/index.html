@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <title>Mini Kalkulator</title>
+  </head>
+  <body>
+    <section>
+      <div class="container">
+        <h1 class="primary-header">Mini calculator</h1>
+        <div class="first-section">
+          <span class="first-part">
+            <label for="value-one" class="value-one-text">Value 1</label>
+            <input type="number" id="value-one" class="input-val input-one" />
+            <img
+              src="backspace.png"
+              alt=""
+              class="backspace first-backspace hide"
+            />
+          </span>
+          <span class="second-part">
+            <label for="value-two" class="value-two-text">Value 2</label>
+            <input type="number" id="value-two" class="input-val input-two" />
+            <img
+              src="backspace.png"
+              alt=""
+              class="backspace second-backspace hide"
+            />
+          </span>
+        </div>
+        <div class="second-section">
+          <button class="btn btn-add">+</button>
+          <button class="btn btn-sub">-</button>
+          <button class="btn btn-multi">*</button>
+          <button class="btn btn-divide">/</button>
+        </div>
+        <div class="answer-section">
+          <ion-icon name="close-outline" class="close-icon hide"></ion-icon>
+        </div>
+      </div>
+    </section>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
